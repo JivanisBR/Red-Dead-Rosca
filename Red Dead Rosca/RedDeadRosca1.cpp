@@ -1,15 +1,11 @@
 #include "raylib.h"
 #include <string>
 #include <vector>
-#include <cmath> // Para a função fabs (valor absoluto)
+#include <cmath> 
 
-// Para evitar a necessidade de usar 'std::' antes de string
 using std::string;
 
-//==================================================================================
-// DECLARAÇÃO DE TODAS AS VARIÁVEIS GLOBAIS
-// (Tradução literal da estrutura do arquivo rdr1.txt)
-//==================================================================================
+VARIÁVEIS GLOBAIS
 
 Texture2D cenario, roleta, bala, p1wins, p2wins, neg, oneshotcontrols, bangbangcontrols, start, p1controls, p2controls, contag, back, pauser;
 Texture2D cb1, cb1i, cb2, cb2i, chapeu1, chapeu2, credits, menui, logo, modoi;
@@ -222,10 +218,6 @@ string nome1="", nome2="";
 int jogador_atual = 1;
 bool nomes_confirmados = false;
 
-
-//==================================================================================
-// DECLARAÇÃO DAS FUNÇÕES (PROTÓTIPOS)
-//==================================================================================
 void adicionar_caracter(string c);
 void atirar_bot();
 void atualizar_chapeus();
@@ -237,9 +229,6 @@ void TocarSomHitAleatorio();
 void TocarSomMenuAleatorio();
 void TocarSomRicocheteAleatorio();
 
-//==================================================================================
-// FUNÇÃO PRINCIPAL (inicio)
-//==================================================================================
 int main(void)
 {
     InitWindow(1200, 700, "Red Dead Rosca");
@@ -335,10 +324,6 @@ int main(void)
     CloseWindow();
     return 0;
 }
-
-//==================================================================================
-// DEFINIÇÃO DAS FUNÇÕES (INÍCIO)
-//==================================================================================
 
 void adicionar_caracter(string c) {
     if (jogador_atual == 1 && nome1.length() < 20) {
@@ -1436,4 +1421,5 @@ void desenhar(){
         }
     }
     EndDrawing();
+
 }
