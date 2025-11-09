@@ -2,84 +2,84 @@
 
 ![Capturar](https://github.com/user-attachments/assets/ad73add0-a686-4f96-8e52-2db6d473813a)
 
-Um jogo de duelo 2D no estilo Velho Oeste, com suporte para 2 Jogadores e 2 Modos de Jogo!
-Desenvolvido como Projeto de Conclusão de Curso (TCC). O projeto foi criado do zero em C++ com a biblioteca Raylib, com o objetivo de demonstrar de forma didática a implementação de mecânicas de jogos básicos, como movimentação, colisão, estados de jogo, múltiplos modos e uma IA simples.
+A 2D **Old West style duel game**, with support for **2 Players and 2 Game Modes**!
+Developed as a **Final Course Project (TCC)**. The project was created **from scratch** in **C++** with the **Raylib** library, aiming to didactically demonstrate the implementation of basic game mechanics, such as movement, collision, game states, multiple modes, particle system, and a simple AI.
 
 ---
 
-## Índice
+## Contents
 
-* [Sobre o Jogo](#sobre-o-jogo)
-* [Funcionalidades](#funcionalidades)
+* [About the Game](#about-the-game)
+* [Features](#features)
 * [Gameplay](#gameplay)
-* [Controles](#controles)
-* [Como Jogar (Executável)](#como-jogar-executável)
-* [Como Compilar (Para Desenvolvedores)](#como-compilar-para-desenvolvedores)
+* [Controls](#controls)
+* [How to Play (Executable)](#how-to-play)
+* [How to Compile (For Developers)](#how-to-compile)
 * [Autor](#autor)
-* [Licença](#licença)
+* [Licence](#licence)
 
 ---
 
-## Sobre o Jogo
+## About the Game
 
-**Red Dead Rosca** é um jogo de arena 2D que coloca dois caubóis um contra o outro em um duelo de vida ou morte. O jogo oferece dois modos distintos, testando tanto os reflexos rápidos quanto o raciocínio estratégico dos jogadores.
+**Red Dead Rosca** is a 2D arena game that pits two cowboys against each other in a duel to the death. The game offers two distinct modes, testing both the players' quick reflexes and strategic thinking.
 
-* **Modo Bang Bang:** Um modo de ação frenética onde os jogadores se movimentam livremente pela arena, pulando e se agachando para desviar de tiros. Cada jogador tem um revólver com 6 balas e precisa recarregar após esvaziar o cilindro. O último a ficar de pé vence a rodada.
+* **Bang Bang Mode:** A franetic action mode where players move freely around the arena, jumping and crouching to dodge bullets. Each player has a 6-bullet revolver and must reload after emptying the cylinder. The last one standing wins the round.
 
-* **Modo One Shot:** Um duelo estratégico baseado em turnos simultâneos, inspirado no clássico "Pedra, Papel e Tesoura". A cada rodada, os jogadores escolhem secretamente entre Carregar, Bloquear ou Atirar. Um tiro derrota uma carga, um bloqueio defende um tiro, e uma carga não tem efeito contra um bloqueio. Vence quem enganar e atirar no oponente no momento certo.
+* **One Shot Mode:** A strategic simultaneous turn-based duel, inspired by the classic "Rock, Paper, Scissors". Each round, players secretly choose between Loading, Blocking, or Shooting. A shot beats a load, a block defends a shot, and a load has no effect against a block. The winner is the one who deceives and shoots the opponent at the right time.
 
-O jogo foi desenvolvido inteiramente em **C++** utilizando a biblioteca gráfica **Raylib**.
+The game was developed entirely in **C++** using the **Raylib** graphics library.
 
-## Funcionalidades
+## Features
 
-- **Dois modos de jogo distintos**: Ação em tempo real e estratégia em turnos.
-- **Suporte para 1 ou 2 jogadores**: Desafie um amigo no modo multiplayer local ou enfrente uma IA no modo solo.
-- **IA Simples**: O oponente no modo solo reage aos movimentos do jogador, como pular e agachar para desviar de tiros.
-- **Física Básica**: Inclui gravidade, pulo com altura variável, knockback ao ser atingido, chapéus com física própria e animações de morte.
-- **Sistema de Áudio Completo**: Efeitos sonoros para tiros, hits, mortes, navegação de menu e música de fundo para ambientação.
-- **Desenvolvido do Zero**: Uma demonstração prática de gerenciamento de estados, renderização, detecção de colisão e input em C++.
+- **Two distinct game modes:** Real-time action and turn-based strategy.
+- **1 or 2 Player Support:** Challenge a friend in local multiplayer or face an AI in solo mode.
+- **Simple IA**: The solo mode opponent reacts to the player's movements, such as jumping and crouching to dodge shots.
+- **Complex Physics**: Includes gravity, variable-height jump, procedural blood particles, knockback when hit, hats with their own physics, and death animations.
+- **Complete Audio System:** Sound effects for shots, hits, deaths, menu navigation, and background music for atmosphere.
+- **Developed from Scratch**: A practical demonstration of state management, rendering, collision detection, and input in C++.
   
 
-## Controles
+## Controls
 
-| Ação | Jogador 1 | Jogador 2 |
+| Action | Player 1 | Player 2 |
 | :--- | :---: | :---: |
-| Mover Esquerda/Direita | **A** / **D** | **J** / **L** |
-| Pular | **W** | **I** |
-| Agachar | **S** | **K** |
-| Atirar | **Espaço** | **M** |
+| Move Left/Right | **A** / **D** | **J** / **L** |
+| Jump | **W** | **I** |
+| Crouch | **S** | **K** |
+| Shoot | **Space** | **M** |
 | Emote | **Q** | **O** |
-| Pausar | **P** | **P** |
+| Pause | **P** | **P** |
 
-## Como Jogar (Executável)
+## How to Play (Executable)
 
-A maneira mais fácil de jogar é baixar a versão já compilada.
+The easiest way to play is to download the pre-compiled version.
 
-1.  Baixe o arquivo `.zip` da versão mais recente.
-2.  Extraia o conteúdo do arquivo `.zip` em uma pasta no seu computador.
-3.  **Importante:** Certifique-se de que o arquivo `RedDeadRosca.exe` esteja na **mesma pasta** que todos os arquivos de áudio (`.mp3`) e imagem (`.png`).
-4.  Execute o `RedDeadRosca.exe` para jogar!
+1.  Download the .zip file of the latest version.
+2.  Extract the contents of the .zip file to a folder on your computer.
+3.  Important: Make sure the RedDeadRosca.exe file is in the same folder as all the audio (.mp3) and image (.png) files.
+4.  Run RedDeadRosca.exe to play!
 
-## Como Compilar (Para Desenvolvedores)
+## How to Compile (For Developers)
 
-Se você deseja compilar o jogo a partir do código-fonte, siga os passos abaixo.
+If you wish to compile the game from the source code, follow the steps below.
 
-### Pré-requisitos
-* Um compilador C++ (o projeto foi desenvolvido com **MinGW-w64** no Windows).
-* A biblioteca **Raylib** configurada para o seu compilador.
+### Pre-requisites
+* A C++ compiler (the project was developed with MinGW-w64 on Windows).
+* The Raylib library configured for your compiler.
 
-### Comando de Compilação
+### Compilation Command
 
-Abra um terminal na pasta do projeto e execute o seguinte comando, substituindo `[caminho para a raylib]` pelo diretório onde sua biblioteca Raylib está localizada:
+Open a terminal in the project folder and run the following command, replacing [path to raylib] with the directory where your Raylib library is located:
 
 ```bash
 g++ RedDeadRosca1.cpp -o RedDeadRosca.exe -I"[caminho para a raylib]\include" -L"[caminho para a raylib]\lib" -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
-Após a compilação, mova os assets (imagens, sons e a fonte) para a mesma pasta do executável gerado.
+After compilation, move the assets (images, sounds, and the font) to the same folder as the generated executable.
 
 ## Autor
 
 **[Giovani Giachini / Jivanis]**
 
-## Licença
-Este projeto foi feito para estudo e tem código aberto, portanto sinta-se à vontade para baixar e modificar.
+## Licence
+This project was made for study and is **open-source**, so feel free to download and modify it.
